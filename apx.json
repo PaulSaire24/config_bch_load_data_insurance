@@ -1,11 +1,11 @@
 {
     "component": "shellscriptfiles",
-    "repoName": "bch_load_data_insurance",
+    "repoName": "config_bch_load_data_insurance",
     "uuaa": "pisd",
     "slave_label": "apx",
     "extra_properties": null,
     "apxrepoBranch": "master",
-    "componentPaaSId": "bch_load_data_insurance",
+    "componentPaaSId": "config_bch_load_data_insurance",
     "appPaaSId": "pisd",
     "proyectPaaSId": "pe.pisd.app-id-26197.dsg",
     "resource_type": "shell_scripts"
