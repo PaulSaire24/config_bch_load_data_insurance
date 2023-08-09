@@ -9,7 +9,7 @@ premium number(17,2);
 begin
     dbms_output.put_line('inicio');
     entity := '0011';
-    branch_id := '0241';
+    branch_id := '0242';
     my_date := '01/01/2020';
 
 
