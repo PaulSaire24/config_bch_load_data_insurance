@@ -8,6 +8,7 @@ branch_id varchar2(4);
 premium number(17,2);
 begin
     dbms_output.put_line('inicio');
+
     entity := '4052';
     branch_id := '1248';
     my_date := '21/08/2023';
