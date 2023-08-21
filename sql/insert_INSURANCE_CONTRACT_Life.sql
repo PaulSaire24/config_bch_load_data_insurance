@@ -8,9 +8,10 @@ branch_id varchar2(4);
 premium number(17,2);
 begin
     dbms_output.put_line('inicio');
-    entity := '3040';
-    branch_id := '0571';
-    my_date := '08/08/2023';
+
+    entity := '4052';
+    branch_id := '1248';
+    my_date := '21/08/2023';
 
 
     FOR i IN 1..5
