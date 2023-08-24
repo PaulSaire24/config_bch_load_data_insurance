@@ -1,5 +1,7 @@
 declare
 account varchar2(20);
+account1 varchar2(20);
+account2 varchar2(20);
 i int;
 j int;
 my_date varchar2(10);
