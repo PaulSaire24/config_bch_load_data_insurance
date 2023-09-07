@@ -12,8 +12,8 @@ BEGIN
    --SELECT MAX(INSURANCE_PRODUCT_ID) + 1 into next_last_product_id  FROM PISD.T_PISD_INSURANCE_PRODUCT;
     next_last_product_id := 9;
 
-   DELETE FROM PISD.T_PISD_INSURANCE_PRODUCT where INSURANCE_PRODUCT_ID=next_last_product_id;
-   DELETE FROM PISD.T_PISD_SCHAN_INSRNC_MOD_FEE where INSURANCE_PRODUCT_ID=next_last_product_id;;
+   --DELETE FROM PISD.T_PISD_INSURANCE_PRODUCT where INSURANCE_PRODUCT_ID=next_last_product_id;
+   --DELETE FROM PISD.T_PISD_SCHAN_INSRNC_MOD_FEE where INSURANCE_PRODUCT_ID=next_last_product_id;
 
    SELECT MAX(FEE_ID) + 1 into next_last_fee_id  FROM PISD.T_PISD_SCHAN_INSRNC_MOD_FEE;
     -- producto
