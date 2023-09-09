@@ -12,7 +12,7 @@ BEGIN
     modality_plan2 := '02';
 
 
-   --SELECT MAX(INSURANCE_PRODUCT_ID) + 1 into next_last_product_id  FROM PISD.T_PISD_INSURANCE_PRODUCT;
+   SELECT MAX(INSURANCE_PRODUCT_ID) + 1 into next_last_product_id  FROM PISD.T_PISD_INSURANCE_PRODUCT;
     next_last_product_id := 9;
     previous_product_id := 130;
    --DELETE FROM PISD.T_PISD_INSURANCE_PRODUCT where INSURANCE_PRODUCT_ID=next_last_product_id;
