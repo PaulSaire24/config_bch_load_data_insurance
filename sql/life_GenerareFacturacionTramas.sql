@@ -1,6 +1,9 @@
        -- dbms_output.put_line(LPAD(entity||branch_id||'00'||account,20,'0')||'|'||LPAD(i*11,10,'0')||'|00001|2101|02'||'|    168'||LPAD(i,3,'0')||'|'||LPAD(premium,15,'0')||'|USD|'||'2020-02-15|2020-02-14|2020-03-16|CP|000000000011139|000000000000000');
 
 --select  LPAD( REPLACE(to_char(dbms_random.value(1,1000)),','), 5,'0') num from dual;
+SET LINESIZE 3500;
+SET PAGESIZE 5000;
+
 
 SELECT  
     (A.INSURANCE_CONTRACT_ENTITY_ID || 
