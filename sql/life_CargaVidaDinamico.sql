@@ -1,3 +1,4 @@
+
 DECLARE
    next_last_product_id NUMBER(4,0);
    next_last_fee_id     NUMBER(4,0);
@@ -15,7 +16,7 @@ BEGIN
    DELETE FROM PISD.T_PISD_INSURANCE_PRODUCT where INSURANCE_PRODUCT_ID=next_last_product_id;
    DELETE FROM PISD.T_PISD_SCHAN_INSRNC_MOD_FEE where INSURANCE_PRODUCT_ID=next_last_product_id;
 
-   SELECT MAX(FEE_ID) + 1 into next_last_fee_id  FROM PISD.T_PISD_SCHAN_INSRNC_MOD_FEE;
+   SELECT nvl(MAX(FEE_ID), 0) + 1 into next_last_fee_id  FROM PISD.T_PISD_SCHAN_INSRNC_MOD_FEE;
     -- producto
     INSERT INTO PISD.T_PISD_INSURANCE_PRODUCT (INSURANCE_PRODUCT_ID ,INSURANCE_RISK_BUSINESS_ID,INSURANCE_TYPE_ID,INSURANCE_PRODUCT_DESC                   ,INSURANCE_PRODUCT_NAME,INSURANCE_PRODUCT_TYPE,GIFT_PRODUCT_TYPE,SIMLT_VALIDITY_DAYS_NUMBER,COLLECTIVE_POLICY_TYPE,ATTEMPT_CLCT_INSRC_CNCL_TYPE,CHARGE_ATTEMPTS_NUMBER,JOINT_IND_TYPE,BILLING_RATE_CHANGE_IND_TYPE,DEFERRED_ENTRY_IND_TYPE,HEALTH_EVAL_MARK_TYPE,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE     , PRODUCT_SHORT_DESC)
                                        VALUES (next_last_product_id ,10                        ,1                ,'SEGURO VIDA DINAMICO'                ,'SEG. VIDA DINAMICO'        ,'841'                 ,'N'              ,30                        ,'N'                   ,'R'                         ,90                    ,'N'           ,'N'                         ,'N'                    ,'N'                  ,'01'                ,'BATCH'         ,SYSTIMESTAMP ,'BATCH'      ,SYSTIMESTAMP   , 'VIDADINAMICO'    );
