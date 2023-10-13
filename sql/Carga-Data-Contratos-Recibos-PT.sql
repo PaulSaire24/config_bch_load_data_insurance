@@ -1,28 +1,5 @@
 declare
 account varchar2(20);
-account1 varchar2(20);
-account2 varchar2(20);
-account3 varchar2(20);
-account4 varchar2(20);
-account5 varchar2(20);
-account6 varchar2(20);
-account7 varchar2(20);
-account8 varchar2(20);
-account9 varchar2(20);
-account10 varchar2(20);
-account11 varchar2(20);
-account12 varchar2(20);
-account13 varchar2(20);
-account14 varchar2(20);
-account15 varchar2(20);
-account16 varchar2(20);
-account17 varchar2(20);
-account18 varchar2(20);
-account19 varchar2(20);
-account20 varchar2(20);
-account21 varchar2(20);
-account22 varchar2(20);
-account23 varchar2(20);
 i int;
 j int;
 my_date varchar2(10);
@@ -39,13 +16,13 @@ begin
     delete PISD.T_PISD_INSURANCE_CTR_RECEIPTS where INSURANCE_CONTRACT_ENTITY_ID = entity and INSURANCE_CONTRACT_BRANCH_ID = branch_id;
     delete PISD.T_PISD_INSURANCE_CONTRACT where INSURANCE_CONTRACT_ENTITY_ID = entity and INSURANCE_CONTRACT_BRANCH_ID = branch_id;
 
-    FOR i IN 1..9
+    FOR i IN 1..200
     LOOP
-        account := LPAD(4170000000+i*100,10,'0');
+        account := LPAD(4170000000+i*10,10,'0');
         premium := 15;
         INSERT INTO PISD.T_PISD_INSURANCE_CONTRACT
                     (INSURANCE_CONTRACT_ENTITY_ID, INSURANCE_CONTRACT_BRANCH_ID, INSRC_CONTRACT_INT_ACCOUNT_ID, CONTRACT_FIRST_VERFN_DIGIT_ID, CONTRACT_SECOND_VERFN_DIGIT_ID,INSURANCE_PRODUCT_ID, INSURANCE_MODALITY_TYPE, INSURANCE_COMPANY_ID, POLICY_ID        , INSURANCE_MANAGER_ID, INSURANCE_PROMOTER_ID, CONTRACT_MANAGER_BRANCH_ID, CONTRACT_INCEPTION_DATE                    , INSURANCE_CONTRACT_START_DATE              , INSURANCE_CONTRACT_END_DATE                 , INSRNC_VALIDITY_MONTHS_NUMBER, INSURANCE_POLICY_END_DATE                   , CUSTOMER_ID, DOMICILE_CONTRACT_ID  , CARD_ISSUING_MARK_TYPE, ISSUED_RECEIPT_NUMBER, PAYMENT_FREQUENCY_ID, PREMIUM_AMOUNT, SETTLE_PENDING_PREMIUM_AMOUNT, CURRENCY_ID, LAST_INSTALLMENT_DATE                       , INSTALLMENT_PERIOD_FINAL_DATE                , INSURED_AMOUNT, BENEFICIARY_TYPE, RENEWAL_NUMBER, CTRCT_DISPUTE_STATUS_TYPE, PERIOD_NEXT_PAYMENT_DATE                   , ENDORSEMENT_POLICY_IND_TYPE, INSRNC_CO_CONTRACT_STATUS_TYPE, CONTRACT_STATUS_ID, CREATION_USER_ID, CREATION_DATE                , USER_AUDIT_ID, AUDIT_DATE                   , INSUR_PENDING_DEBT_IND_TYPE, TOTAL_DEBT_AMOUNT, PREV_PEND_BILL_RCPTS_NUMBER, SETTLEMENT_VAR_PREMIUM_AMOUNT, SETTLEMENT_FIX_PREMIUM_AMOUNT, INSURANCE_COMPANY_PRODUCT_ID, AUTOMATIC_DEBIT_INDICATOR_TYPE, BIOMETRY_TRANSACTION_ID )
-              VALUES(entity                      , branch_id                   , account                      , '7'                          , '7'                           , 4                   , '11'                  , 1                   , '0007168919' ´+ i, 'P029999'           , 'P029999'            , branch_id                 , ADD_MONTHS(to_Date(my_date,'DD/MM/YYYY'),0), ADD_MONTHS(to_Date(my_date,'DD/MM/YYYY'),0), ADD_MONTHS(to_Date(my_date,'DD/MM/YYYY'),12), 12                           , ADD_MONTHS(to_Date(my_date,'DD/MM/YYYY'),12), '90008603' , '00110486840190021967', 'N'                   , 1                    , 3                   , 179.01         , 4820.99                     , 'PEN'      , ADD_MONTHS(to_Date(my_date,'DD/MM/YYYY'),12), ADD_MONTHS(to_Date(my_date,'DD/MM/YYYY'),12) , 15700.00      , '08'            , 0             , 'CC'                       , ADD_MONTHS(to_Date(my_date,'DD/MM/YYYY'),1), 'N'                        , 'FOR'                         , 'FOR'             , 'P029801'       , TO_DATE(sysdate,'DD/MM/YYYY'), 'P029801'    , TO_DATE(sysdate,'DD/MM/YYYY'), 'N'                        , 0                , 0                       , 0                            , 4820.99                       , '1121'                      , 'S'                           , '923123'                );
+              VALUES(entity                      , branch_id                   , account                      , '7'                          , '7'                           , 4                   , '11'                  , 1                   , '0007168919' + i, 'P029999'           , 'P029999'            , branch_id                 , ADD_MONTHS(to_Date(my_date,'DD/MM/YYYY'),0), ADD_MONTHS(to_Date(my_date,'DD/MM/YYYY'),0), ADD_MONTHS(to_Date(my_date,'DD/MM/YYYY'),12), 12                           , ADD_MONTHS(to_Date(my_date,'DD/MM/YYYY'),12), '90008603' , '00110486840190021967', 'N'                   , 1                    , 3                   , 179.01         , 4820.99                     , 'PEN'      , ADD_MONTHS(to_Date(my_date,'DD/MM/YYYY'),12), ADD_MONTHS(to_Date(my_date,'DD/MM/YYYY'),12) , 15700.00      , '08'            , 0             , 'CC'                       , ADD_MONTHS(to_Date(my_date,'DD/MM/YYYY'),1), 'N'                        , 'FOR'                         , 'FOR'             , 'P029801'       , TO_DATE(sysdate,'DD/MM/YYYY'), 'P029801'    , TO_DATE(sysdate,'DD/MM/YYYY'), 'N'                        , 0                , 0                       , 0                            , 4820.99                       , '1121'                      , 'S'                           , '923123'                );
         FOR j IN 1..1
         LOOP
           INSERT INTO PISD.T_PISD_INSURANCE_CTR_RECEIPTS(
