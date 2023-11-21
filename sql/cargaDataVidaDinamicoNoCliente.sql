@@ -16,7 +16,7 @@ begin
     delete PISD.T_PISD_INSURANCE_CTR_RECEIPTS where INSURANCE_CONTRACT_ENTITY_ID = entity and INSURANCE_CONTRACT_BRANCH_ID = branch_id;
     delete PISD.T_PISD_INSURANCE_CONTRACT where INSURANCE_CONTRACT_ENTITY_ID = entity and INSURANCE_CONTRACT_BRANCH_ID = branch_id;
 
-    FOR i IN 1..2
+    FOR i IN 1..1
     LOOP
         account := LPAD(4140000000+i*100,10,'0');
         premium := 15;
