@@ -12,7 +12,7 @@ begin
     branch_id := '0491';
     my_date := '29/08/2020';
 
-    FOR i IN 1..20
+    FOR i IN 1..200
     LOOP
         account := LPAD(4580000000+i*100,10,'0');
         select round(dbms_random.value() * 50) * 10 into premium from dual;
