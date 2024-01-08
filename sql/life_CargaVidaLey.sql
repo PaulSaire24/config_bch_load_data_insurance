@@ -4,6 +4,7 @@ DECLARE
    next_last_fee_id     NUMBER(4,0);
    modality_plan1 varchar2(2);
    modality_plan2 varchar2(2);
+   modality_plan3 varchar2(2);
 BEGIN
 
     modality_plan1 := '01';
