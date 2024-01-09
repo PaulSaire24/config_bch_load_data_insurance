@@ -1,0 +1,1 @@
+INSERT INTO PBFD.T_PBFD_BMTR_PROCESS_RULES (ACCESS_APP_ID   ,RULE_NAME  ,RULE_DESC,RULE_PARAMETER_DESC ,CREATION_USER_ID  ,CREATION_DATE  ,USER_AUDIT_ID  ,AUDIT_DATE ) VALUES('13000104','max_attempts_failed','Maximo numero de intentos fallidos en el proceso biometrico .','5','P041362',sysdate,'P041362',sysdate);
