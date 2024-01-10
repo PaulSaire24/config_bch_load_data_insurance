@@ -73,7 +73,7 @@ SET
     collection_file_reception_date = NULL,
     incidence_error_desc = NULL
 WHERE
-        PRODUCT_CONTRACT_ACCOUNT_ID in ('4580000900','4580001000','4580001100','4580001200','4580001300','4580001400','4580001500','4580001600','4580001900','4580002000');
+        PRODUCT_CONTRACT_ACCOUNT_ID in ('4580000900','4580001000','4580001100','4580001200','4580001300','4580001400','4580001500','4580001600','4580001900','4580002000')
 AND receipt_id = 2;
 COMMIT;
 UPDATE piop.t_piop_receipt_payable
@@ -85,5 +85,5 @@ SET
     incidence_error_desc = 'no se pudo cobrar por falta de fondos'
 WHERE
         product_contract_account_id IN ( '4580001700', '4580001800')
-  AND receipt_id = 2;
+AND receipt_id = 2;
 COMMIT;
