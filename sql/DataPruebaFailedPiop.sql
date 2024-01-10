@@ -10,7 +10,7 @@ UPDATE piop.t_piop_contract_payable
 SET
     openpay_customer_card_tokenized_id = 'khylhqixyixwo52sjixe',
     openpay_commerce_id = 'mvhqxtxfi8ebfnljeoeo',
-    contract_holder_names_desc = NULL,
+    contract_holder_name = NULL,
     email_desc = NULL
 WHERE
         PRODUCT_CONTRACT_ACCOUNT_ID = '4580000900';
