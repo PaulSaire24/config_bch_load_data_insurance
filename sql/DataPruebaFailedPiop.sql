@@ -11,7 +11,7 @@ SET
     openpay_customer_card_tokenized_id = 'khylhqixyixwo52sjixe',
     openpay_commerce_id = 'mvhqxtxfi8ebfnljeoeo',
     contract_holder_names_desc = NULL,
-    email_phone_desc = NULL
+    email_desc = NULL
 WHERE
         PRODUCT_CONTRACT_ACCOUNT_ID = '4580000900';
 COMMIT;
