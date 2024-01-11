@@ -65,6 +65,8 @@ WHERE
         PRODUCT_CONTRACT_ACCOUNT_ID = '4580001600'
 AND RECEIPT_ID  = 2;
 COMMIT;
+
+
 UPDATE piop.t_piop_receipt_payable
 SET
     receipt_final_status_type = 'FAC',
