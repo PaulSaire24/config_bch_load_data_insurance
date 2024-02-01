@@ -6,6 +6,6 @@ SET
     collection_file_reception_date = TO_DATE('2023-12-29', 'YYYY-MM-DD'),
     incidence_error_desc = 'no se pudo cobrar por falta de fondos'
 WHERE
-        product_contract_account_id IN ( '4580000500', '4580000600', '4580000700', '4580000800')
+        product_contract_account_id IN ( '4580001700', '4580001800')
 AND receipt_id = 2;
 COMMIT;
