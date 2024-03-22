@@ -214,7 +214,7 @@ INSERT INTO
 VALUES
     (
         '2',
-        1,
+        3,
         '10',
         TO_DATE('2024-03-10', 'YYYY-MM-DD'),
         '01',
@@ -239,7 +239,7 @@ INSERT INTO
 VALUES
     (
         '2',
-        2,
+        4,
         '10',
         TO_DATE('2024-03-10', 'YYYY-MM-DD'),
         '03',
@@ -339,7 +339,7 @@ INSERT INTO
 VALUES
     (
         '3',
-        1,
+        5,
         '10',
         TO_DATE('2024-03-20', 'YYYY-MM-DD'),
         '01',
@@ -438,7 +438,7 @@ INSERT INTO
 VALUES
     (
         '4',
-        1,
+        6,
         '10',
         TO_DATE('2024-03-20', 'YYYY-MM-DD'),
         '01',
@@ -488,7 +488,7 @@ INSERT INTO
 VALUES
     (
         '5',
-        '0011',
+        '0004',
         '7794',
         '4000000887',
         '5',
@@ -537,35 +537,10 @@ INSERT INTO
 VALUES
     (
         '5',
-        1,
+        7,
         '10',
         TO_DATE('2024-03-05', 'YYYY-MM-DD'),
         '01',
-        'P121328',
-        SYSTIMESTAMP,
-        'P121328',
-        SYSTIMESTAMP
-    );
-
-INSERT INTO
-    PISD.T_PISD_INSURANCE_REQ_CNCL_MOV (
-        REQUEST_SEQUENCE_ID,
-        SEQ_MOV_NUMBER,
-        ADDITIONAL_DATA_DESC,
-        CONTRACT_STATUS_DATE,
-        CONTRACT_STATUS_ID,
-        CREATION_USER_ID,
-        CREATION_DATE,
-        USER_AUDIT_ID,
-        AUDIT_DATE
-    )
-VALUES
-    (
-        '5',
-        1,
-        '10',
-        TO_DATE('2024-03-05', 'YYYY-MM-DD'),
-        '03',
         'P121328',
         SYSTIMESTAMP,
         'P121328',
