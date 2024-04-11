@@ -1,0 +1,27 @@
+DELETE FROM PISD.T_PISD_INSRNC_ROLE_MODALITY
+WHERE INSURANCE_PRODUCT_ID = 13
+AND INSURANCE_MODALITY_TYPE IN ('01','02','03')
+AND PARTICIPANT_ROLE_ID = 2;
+COMMIT;
+
+INSERT INTO PISD.T_PISD_INSRNC_ROLE_MODALITY (INSURANCE_PRODUCT_ID,INSURANCE_MODALITY_TYPE,PARTICIPANT_ROLE_ID,PRT_MAXIMUM_AGE_NUMBER,PRT_MINIMUM_AGE_NUMBER,ALLOWED_PRT_MAXIMUM_NUMBER,ALLOWED_PRT_MINIMUM_NUMBER,SBS_CUSTOMER_TYPE,CUSTOMER_EXCLUDED_TYPE,PRT_ALLOW_FINAL_AGE_NUMBER,CUSTOMER_INDICATOR_TYPE,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+                                       VALUES(13                  ,'01'                   ,3                  ,70                    ,18                    ,1                         ,1                         ,'N'              ,'S'                   ,80                        ,'S'                    ,'01'                   ,'BATCH'         ,SYSTIMESTAMP ,'BATCH'      ,SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSRNC_ROLE_MODALITY (INSURANCE_PRODUCT_ID,INSURANCE_MODALITY_TYPE,PARTICIPANT_ROLE_ID,PRT_MAXIMUM_AGE_NUMBER,PRT_MINIMUM_AGE_NUMBER,ALLOWED_PRT_MAXIMUM_NUMBER,ALLOWED_PRT_MINIMUM_NUMBER,SBS_CUSTOMER_TYPE,CUSTOMER_EXCLUDED_TYPE,PRT_ALLOW_FINAL_AGE_NUMBER,CUSTOMER_INDICATOR_TYPE,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+                                       VALUES(13                  ,'01'                   ,7                  ,70                    ,18                    ,1                         ,1                         ,'N'              ,'S'                   ,80                        ,'S'                    ,'01'                   ,'BATCH'         ,SYSTIMESTAMP ,'BATCH'      ,SYSTIMESTAMP);
+COMMIT;
+
+INSERT INTO PISD.T_PISD_INSRNC_ROLE_MODALITY (INSURANCE_PRODUCT_ID,INSURANCE_MODALITY_TYPE,PARTICIPANT_ROLE_ID,PRT_MAXIMUM_AGE_NUMBER,PRT_MINIMUM_AGE_NUMBER,ALLOWED_PRT_MAXIMUM_NUMBER,ALLOWED_PRT_MINIMUM_NUMBER,SBS_CUSTOMER_TYPE,CUSTOMER_EXCLUDED_TYPE,PRT_ALLOW_FINAL_AGE_NUMBER,CUSTOMER_INDICATOR_TYPE,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+                                       VALUES(13                  ,'02'                   ,3                  ,70                    ,18                    ,1                         ,1                         ,'N'              ,'S'                   ,80                        ,'S'                    ,'01'                   ,'BATCH'         ,SYSTIMESTAMP ,'BATCH'      ,SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSRNC_ROLE_MODALITY (INSURANCE_PRODUCT_ID,INSURANCE_MODALITY_TYPE,PARTICIPANT_ROLE_ID,PRT_MAXIMUM_AGE_NUMBER,PRT_MINIMUM_AGE_NUMBER,ALLOWED_PRT_MAXIMUM_NUMBER,ALLOWED_PRT_MINIMUM_NUMBER,SBS_CUSTOMER_TYPE,CUSTOMER_EXCLUDED_TYPE,PRT_ALLOW_FINAL_AGE_NUMBER,CUSTOMER_INDICATOR_TYPE,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+                                       VALUES(13                  ,'02'                   ,7                  ,70                    ,18                    ,1                         ,1                         ,'N'              ,'S'                   ,80                        ,'S'                    ,'01'                   ,'BATCH'         ,SYSTIMESTAMP ,'BATCH'      ,SYSTIMESTAMP);
+COMMIT;
+
+
+INSERT INTO PISD.T_PISD_INSRNC_ROLE_MODALITY (INSURANCE_PRODUCT_ID,INSURANCE_MODALITY_TYPE,PARTICIPANT_ROLE_ID,PRT_MAXIMUM_AGE_NUMBER,PRT_MINIMUM_AGE_NUMBER,ALLOWED_PRT_MAXIMUM_NUMBER,ALLOWED_PRT_MINIMUM_NUMBER,SBS_CUSTOMER_TYPE,CUSTOMER_EXCLUDED_TYPE,PRT_ALLOW_FINAL_AGE_NUMBER,CUSTOMER_INDICATOR_TYPE,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+                                       VALUES(13                  ,'03'                   ,3                  ,70                    ,18                    ,1                         ,1                         ,'N'              ,'S'                   ,80                        ,'S'                    ,'01'                   ,'BATCH'         ,SYSTIMESTAMP ,'BATCH'      ,SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSRNC_ROLE_MODALITY (INSURANCE_PRODUCT_ID,INSURANCE_MODALITY_TYPE,PARTICIPANT_ROLE_ID,PRT_MAXIMUM_AGE_NUMBER,PRT_MINIMUM_AGE_NUMBER,ALLOWED_PRT_MAXIMUM_NUMBER,ALLOWED_PRT_MINIMUM_NUMBER,SBS_CUSTOMER_TYPE,CUSTOMER_EXCLUDED_TYPE,PRT_ALLOW_FINAL_AGE_NUMBER,CUSTOMER_INDICATOR_TYPE,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+                                       VALUES(13                  ,'03'                   ,7                  ,70                    ,18                    ,1                         ,1                         ,'N'              ,'S'                   ,80                        ,'S'                    ,'01'                   ,'BATCH'         ,SYSTIMESTAMP ,'BATCH'      ,SYSTIMESTAMP);
+COMMIT;
