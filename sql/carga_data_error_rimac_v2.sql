@@ -456,16 +456,13 @@ INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CAT
 VALUES ('PC001','UA013011','BBVAE1000151|El campo ubigeo de persona asegurado con valor ""#$%&//*-+"" no coincide para el patr'||chr(243)||'n: 0-9','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
-VALUES ('PC001','UR003001','BBVAE1000152|El campo distrito de persona responsable no puede estar vacío
-El distrito del resp. pago no puede ser vacío. Por favor actualizar la informaci'||chr(243)||'n en Nacar o PIC.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+VALUES ('PC001','UR003001','BBVAE1000152|El distrito del resp. pago no puede ser vacío. Por favor actualizar la informaci'||chr(243)||'n en Nacar o PIC.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
-VALUES ('PC001','UC003001','BBVAE1000153|El campo distrito de persona contratante no puede estar vacío
-El distrito del contratante no puede ser vacío. Por favor actualizar la informaci'||chr(243)||'n en Nacar o PIC.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+VALUES ('PC001','UC003001','BBVAE1000153|El distrito del contratante no puede ser vacío. Por favor actualizar la informaci'||chr(243)||'n en Nacar o PIC.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
-VALUES ('PC001','UA003001','BBVAE1000154|El campo distrito de persona asegurado no puede estar vacío
-El distrito del asegurado no puede ser vacío. . Por favor actualizar la informaci'||chr(243)||'n en Nacar o PIC.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+VALUES ('PC001','UA003001','BBVAE1000154|El distrito del asegurado no puede ser vacío. . Por favor actualizar la informaci'||chr(243)||'n en Nacar o PIC.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
 VALUES ('PC001','UR003022','BBVAE1000155|El campo distrito de persona responsable en la combinaci'||chr(243)||'n entre (distrito, provincia y departamento) no existe','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
