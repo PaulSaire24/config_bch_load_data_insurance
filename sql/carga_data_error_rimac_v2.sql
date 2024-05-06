@@ -138,13 +138,13 @@ INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CAT
 VALUES ('PC001','PA011001','BBVAE2000107|La fecha de nacimiento del Asegurado debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
-VALUES ('PC001','PR011010','BBVAE2000108|La fecha de nacimiento del Responsable de Pago debe tener un formato v'||chr(225)||'lido. Por favor actualizar la informaci'||chr(243)||'n en Nacar o PIC.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+VALUES ('PC001','PR011025','BBVAE2000108|La fecha de nacimiento del Responsable de Pago debe tener un formato v'||chr(225)||'lido. Por favor actualizar la informaci'||chr(243)||'n en Nacar o PIC.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
-VALUES ('PC001','PC011010','BBVAE2000109|La fecha de nacimiento del Contratante debe tener un formato v'||chr(225)||'lido. Por favor actualizar la informaci'||chr(243)||'n en Nacar o PIC.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+VALUES ('PC001','PC011025','BBVAE2000109|La fecha de nacimiento del Contratante debe tener un formato v'||chr(225)||'lido. Por favor actualizar la informaci'||chr(243)||'n en Nacar o PIC.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
-VALUES ('PC001','PA011010','BBVAE2000110|La fecha de nacimiento del Asegurado debe tener un formato v'||chr(225)||'lido. Por favor actualizar la informaci'||chr(243)||'n en Nacar o PIC.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+VALUES ('PC001','PA011025','BBVAE2000110|La fecha de nacimiento del Asegurado debe tener un formato v'||chr(225)||'lido. Por favor actualizar la informaci'||chr(243)||'n en Nacar o PIC.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
 VALUES ('PC001','PR011002','BBVAE2000105|La fecha de nacimiento del Responsable de Pago debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
@@ -434,33 +434,123 @@ COMMIT;
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
 VALUES ('PC001','UA011008','BBVAE2000206|El tipo de v'||chr(237)||'a del asegurado debe tener un valor v'||chr(225)||'lido. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UR009004','BBVAE2000207|El nombre de la v'||chr(237)||'a del Responsable de Pago supera los 100 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UC009004','BBVAE2000208|El nombre de la v'||chr(237)||'a del Contratante supera los 100 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UA009004','BBVAE2000209|El nombre de la v'||chr(237)||'a del Asegurado supera los 100 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UR013011','BBVAE2000210|El ubigeo del Responsable de pago debe contener '||chr(250)||'nicamente n'||chr(250)||'meros. Verificar la informaci'||chr(243)||'n y corregir en Nacar o PIC','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UC013011','BBVAE2000211|El ubigeo del Contratante debe contener '||chr(250)||'nicamente n'||chr(250)||'meros. Verificar la informaci'||chr(243)||'n y corregir en Nacar o PIC','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UA013011','BBVAE2000212|El ubigeo del Asegurado debe contener '||chr(250)||'nicamente n'||chr(250)||'meros. Verificar la informaci'||chr(243)||'n y corregir en Nacar o PIC','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UR003022','BBVAE2000213|El distrito del Responsable de Pago debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o o tener corresponder con su provincia y departamento. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UR005022','BBVAE2000214|La provincia del Responsable de Pago debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o o tener corresponder con su distrito y departamento. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UR007022','BBVAE2000215|El departamento del Responsable de Pago debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o o tener corresponder con su distrito y provincia. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UC003022','BBVAE2000216|El distrito del Contratante debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o o tener corresponder con su provincia y departamento. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UC005022','BBVAE2000217|La provincia del Contratante debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o o tener corresponder con su distrito y departamento. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UC007022','BBVAE2000218|El departamento del Contratante debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o o tener corresponder con su distrito y provincia. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UA003022','BBVAE2000219|El distrito del Asegurado debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o o tener corresponder con su provincia y departamento. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UA005022','BBVAE2000220|La provincia del Asegurado debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o o tener corresponder con su distrito y departamento. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UA007022','BBVAE2000221|El departamento del Asegurado debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o o tener corresponder con su distrito y provincia. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UR003004','BBVAE2000222|El distrito del Responsable de Pago supera los 50 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UC003004','BBVAE2000223|El distrito del Contratante supera los 50 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UA003004','BBVAE2000224|El distrito del Asegurado supera los 50 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UR003002','BBVAE2000225|El distrito del Responsable de Pago debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UC003002','BBVAE2000226|El distrito del Contratante debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UA003002','BBVAE2000227|El distrito del Asegurado debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UR005004','BBVAE2000228|La provincia del Responsable de Pago supera los 50 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UC005004','BBVAE2000229|La provincia del Contratante supera los 50 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UA005004','BBVAE2000230|La provincia del Asegurado supera los 50 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UR007002','BBVAE2000231|El departamento del Responsable de Pago debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UC007002','BBVAE2000232|El departamento del Contratante debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UA007002','BBVAE2000233|El departamento del Asegurado debe ser enviado como parte de los datos del alta  y no debe estar vac'||chr(237)||'o. Verificar y corregir en Nacar o PIC, si el error persiste contactar al Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UR007004','BBVAE2000234|El departamento del Responsable de Pago supera los 50 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UC007004','BBVAE2000235|El departamento del Contratante supera los 50 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UA007004','BBVAE2000236|El departamento del Asegurado supera los 50 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UR001004','BBVAE2000237|La direcci'||chr(243)||'n del Responsable de Pago supera los 200 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UC001004','BBVAE2000238|La direcci'||chr(243)||'n del Contratante supera los 200 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
+INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
+VALUES ('PC001','UA001004','BBVAE2000239|La direcci'||chr(243)||'n del Asegurado supera los 200 caracteres. De presentarse este caso, contactar a Network Support.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+COMMIT;
 
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
 VALUES ('PC002','00000000','Errores funcionales para el canal PIC','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
 
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
-VALUES ('PC002','CO000027','BBVAE2000055|El nombre del responsable de pago no corresponde al documento ingresado. Verificar la informaci'||chr(243)||'n brindada por el cliente  y actualizar de ser necesario.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+VALUES ('PC002','CO000027','BBVAE2000055|El nombre del {0} no corresponde al documento ingresado. Verificar la informaci'||chr(243)||'n brindada por el cliente  y actualizar de ser necesario.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
-VALUES ('PC002','CO000022','BBVAE2000056|El apellido paterno del responsable de pago tiene caracteres extra'||chr(241)||'os tales como ("@","/", "+"): Corregir la informaci'||chr(243)||'n del cliente en Nacar o PIC','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+VALUES ('PC002','CO000028','BBVAE2000059|El apellido paterno del {0} no corresponde al documento ingresado. Verificar la informaci'||chr(243)||'n brindada por el cliente  y actualizar de ser necesario.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
-VALUES ('PC002','CO000023','BBVAE2000057|El apellido paterno del contratante  tiene caracteres extra'||chr(241)||'os tales como ("@","/", "+"): Corregir la informaci'||chr(243)||'n del cliente en Nacar o PIC','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+VALUES ('PC002','CO000029','BBVAE2000060|El apellido materno del {0} no corresponde al documento ingresado. Verificar la informaci'||chr(243)||'n brindada por el cliente  y actualizar de ser necesario.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
-VALUES ('PC002','CO000021','BBVAE2000058|El apellido paterno del asegurado tiene caracteres extra'||chr(241)||'os tales como ("@","/", "+"): Corregir la informaci'||chr(243)||'n del asegurado en Nacar o PIC','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+VALUES ('PC002','CO000031','BBVAE2000061|La fecha de nacimiento del {0} no corresponde al documento ingresado. Verificar la informaci'||chr(243)||'n brindada por el cliente  y actualizar de ser necesario.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
 INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
-VALUES ('PC002','CO000028','BBVAE2000059|El apellido paterno del responsable de pago no corresponde al documento ingresado. Verificar la informaci'||chr(243)||'n brindada por el cliente  y actualizar de ser necesario.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
-COMMIT;
-INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
-VALUES ('PC002','CO000029','BBVAE2000060|El apellido materno del responsable de pago no corresponde al documento ingresado. Verificar la informaci'||chr(243)||'n brindada por el cliente  y actualizar de ser necesario.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
-COMMIT;
-INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
-VALUES ('PC002','CO000031','BBVAE2000061|La fecha de nacimiento del responsable de pago no corresponde al documento ingresado. Verificar la informaci'||chr(243)||'n brindada por el cliente  y actualizar de ser necesario.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
-COMMIT;
-INSERT INTO PISD.T_PISD_INSURANCE_CATALOG (KEY_CATALOG_ID,CATALOG_ELEMENT_ID,CATALOG_ELEMENT_DESC,REGISTRY_SITUATION_TYPE,CREATION_USER_ID,CREATION_DATE,USER_AUDIT_ID,AUDIT_DATE)
-VALUES ('PC002','CO000030','BBVAE2000062|El sexo del Responsable de Pago no corresponde al documento ingresado. Verificar la informaci'||chr(243)||'n brindada por el cliente  y actualizar de ser necesario.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
+VALUES ('PC002','CO000030','BBVAE2000062|El sexo del {0} no corresponde al documento ingresado. Verificar la informaci'||chr(243)||'n brindada por el cliente  y actualizar de ser necesario.','01','BATCH',SYSTIMESTAMP,'BATCH',SYSTIMESTAMP);
 COMMIT;
 
